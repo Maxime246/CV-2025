@@ -1,0 +1,145 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Open sans, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+}
+
+form{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+div p {
+  margin-bottom: 10PX;
+}
+
+
+
+h1{
+  display : flex; 
+  justify-content: center;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+h1 span{
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.divResultats p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+#postZoneResult{
+  font-size: 0.8em;
+}
+
+#zoneResultats{
+  font-size: 1.5em;
+}
+input[type="radio"]{
+  margin-right : 15px;
+}
+
+.boutons{
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  margin-top: 40px;
+  margin-bottom : 20px;}
+
+#reset {
+  width: 60px; /* Largeur plus petite */
+  font-size: 1.5em; /* Taille de police plus petite */
+  padding: 8px 12px;
+  background-color: #90ddf5;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Bouton Valider (plus grand et centré) */
+#btnValider {
+  width: 150px; /* Largeur plus grande */
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btnValider:hover, #reset:hover{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  border: 0;
+}
+
+#reset:hover{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  border: 0;
+}
+
+.bonneReponse {
+  background : linear-gradient(to bottom,#44d539,#bbf0b7 )
+  
+
+}
+
+.mauvaiseReponse {
+  background : linear-gradient(to bottom,#e77373,#ca4949)
+}
+
+#divq1, #divq2, #divq3, #divq4, #divq5, #divResultats{ 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 700px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  background-color: #e0eafc;
+}
+
+#lien-retour {
+  display: flex;
+  background-color: #007bff;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+margin-bottom: 70px;}
